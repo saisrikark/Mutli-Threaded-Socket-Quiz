@@ -3,8 +3,8 @@ import socket
 from os import getpid
 
 PID=getpid()
-TCP_PORT='127.0.0.1'
-TCP_HOST=5002
+TCP_PORT=5002
+TCP_HOST='127.0.0.1'
 BUFFERSIZE=1000
 QUESTION_COUNTER=0
 SEND_STRING=""
@@ -26,10 +26,13 @@ def check_connection():
             print("Trying to establish connection again.")
             s.connect((TCP_HOST,TCP_PORT))
 
+def establish_connection():
+	s.connect((TCP_HOST,TCP_PORT))
+
 #In case you want some timeout ask server to send
 #t=s.recv(BUFFERSIZE)
 
-s.connect((TCP_HOST,TCP_PORT))
+establish_connection()
 
 while(QUESTION_COUNTER<3):
     check_connection()
