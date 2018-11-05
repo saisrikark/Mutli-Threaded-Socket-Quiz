@@ -1,9 +1,12 @@
+#!/usr/bin/env python3
+
+
 from threading import Thread
 import socket
 from os import getpid
 
 PID=getpid()
-TCP_PORT=5002
+TCP_PORT=6000
 TCP_HOST='127.0.0.1'
 BUFFERSIZE=1000
 QUESTION_COUNTER=0
