@@ -1,0 +1,35 @@
+#################README####################
+
+    TEAM MEMBERS           USN
+Saahitya E            01FB16ECS322
+Sai Srikar Komaravolu 01FB16ECS330
+
+Project Title
+Multi Thread Socket Quiz Application
+
+Project Description
+Created a quiz application using python, mulit-threading and socket programming
+such that many clients may communicate at the same time.
+
+Modules
+server.py
+	This module is executed to start the server
+client.py
+	This module is executed to start one of the many possible clients
+
+Explanation of Modules and Project as a whole
+server.py
+	This code is used to start a server.
+	For each client that is started, a server thread is started.
+	Client connects to the respective server thread and executes its operations.
+	Accepts clients and sends the data to all the clients.
+	This data is usually the number of questions in the game or the actual questions.
+	Accepts the answer and makes necessary calculations to find the total number of questions correctly answered by the user.	
+
+client.py
+	This code is where the user plays the game with the server.
+	It connects to an individual thread to the server.
+	Connects to the server and has communication with it.
+	Receives the total_number_of_questions to be answered and the respective questions.
+	Accepts the answer from the user and sends it to the server.
+

@@ -1,0 +1,23 @@
+##############INSTALLATION/RUNNING/SETUP GUIDE#################
+
+Simple execution 
+Step 1:
+	Change directory to src folder
+	cd yourpathname/src
+Step 2:
+	Start the server using
+	python3 server.py
+	Enter total number of questions and hit Y to accept clients
+Step 3:
+	Server waits until client is started
+	Client is started by this process
+	python3 client.py
+	Enter name and automatically connect to server
+	
+Step 4:
+	Repeat step 3 after wanting to accept more clients
+Step 5:
+	Communicate between server and client
+	
+Step 6:
+	Communication ends and final result is displayed
