@@ -1,6 +1,7 @@
 ##############INSTALLATION/RUNNING/SETUP GUIDE#################
 
-Simple execution 
+Simple execution
+
 Step 1:
 	Change directory to src folder
 	cd yourpathname/src
@@ -13,7 +14,6 @@ Step 3:
 	Client is started by this process
 	python3 client.py
 	Enter name and automatically connect to server
-	
 Step 4:
 	Repeat step 3 after wanting to accept more clients
 Step 5:
